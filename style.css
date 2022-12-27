@@ -1,0 +1,98 @@
+h1 {
+     color: white;
+ }
+
+ul{
+    list-style: none;
+}
+li{
+    align-self: center;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+ #header {
+     padding: 10px;
+     border: 1px solid #000000;
+     background-color: #247BA0;
+     border-radius: 5px;
+ }
+
+ #footer {
+     padding: 10px;
+     color: white;
+     border-radius: 5px;
+     border: 1px solid #000000;
+     background-color: #247BA0;
+     margin-top: 20%;
+ }
+
+ #content {
+     padding: 10px;
+     border: 1px solid #000;
+     width: 1000px;
+     margin-bottom: 10px;
+     margin-top: 10px;
+     border-radius: 5px;
+     background-image: url(img/leaves.webp);
+ }
+
+ #navigation {
+     float: right;
+     padding: 10px;
+     border: 1px solid #000;
+     background-color: #e6e6ff;
+     margin-top: 10px;
+     border-radius: 5px;
+ }
+
+ .gambar {
+     float: left;
+     margin-right: 10px;
+     margin-left: 10px;
+     margin-bottom: 10px;
+     margin-top: 10px;
+     width: 250px;
+     border-radius: 5px;
+     border: 5px solid black;
+ }
+
+ .header-img {
+     float: left;
+     margin-right: 10px;
+     margin-left: 0px;
+     margin-bottom: 10px;
+     margin-top: 0px;
+     height: 75px;
+ }
+
+input[type=text]{
+    width: 100%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #083D77;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #2E4057;
+    color: white;
+    padding: 5px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ #content p {
+     margin-top: opx;
+     text-align: justify;
+     line-height: 20px;
+ }

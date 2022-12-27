@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>Lorem ipsum dolor sit amet.</title>
+</head>
+
+<body>
+    <div id="header">
+        <img class="header-img" src="Logo UMP(1).png" alt="">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+    </div>
+
+    <div id="navigation">
+        <h3>MENU NAVIGATION</h3>
+            <ul>
+                <li><a href="https://ump.ac.id/"><i class="fa-solid fa-graduation-cap fa-2xl"></i></a></li>
+                <li><a href="https://fts.ump.ac.id/"><i class="fa-solid fa-atom fa-2xl"></i></a></li>
+                <li><a href="https://informatika.ump.ac.id/"><i class="fa-solid fa-computer fa-2xl"></i></a></li>
+                <li><a href="https://www.instagram.com/tama0301._/"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                <li><a href="Nilai-Skripsi.html"><i class="fa-solid fa-receipt fa-2xl"></i></a></li>
+                <li><a href="Nilai-Simulasi-Audit.html"><i class="fa-solid fa-file-lines fa-2xl"></i></a></li>
+            </ul>
+    </div>
+    <div id="content">
+        <table>
+            <tr>
+                <td><label for="">Ketepatan dan kedisplinan selama pelaksanaan bimbingan skripsi</label>
+                </td>
+                <td><input type="text" name="s1" id="s1" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+            </tr>
+            <tr>
+                <td><label for="">Kemauan dan tingkat kedisplinan dalam menyelesaikan skripsi</label>
+                </td>
+                <td><input type="text" name="s2" id="s2" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="text" name="eksekusi_hasil_final_2" id="eksekusi_hasil_final_2"></td>
+            </tr>
+            <th>
+                &nbsp;
+            </th>
+            <th>Skor 1</th>
+            <th>Skor 2</th>
+            <th>Skor 3</th>
+            <tr>
+                <td><label for="">Orisinalitas dan kebaruan topik penelitian</label>
+                </td>
+                <td><input type="text" name="spod1" id="spod1" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+                <td><input type="text" name="spod2" id="spod2" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+                <td><input type="text" name="spod3" id="spod3" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+            </tr>
+            <tr>
+                <td><label for="">Relevansi logis antara judul,masalah,teori,metode dan hasil penelitian</label>
+                </td>
+                <td><input type="text" name="sprl1" id="sprl1" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+                <td><input type="text" name="sprl2" id="sprl2" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+                <td><input type="text" name="sprl3" id="sprl3" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+            </tr>
+            <tr>
+                <td><label for="">Tata Tulis</label>
+                </td>
+                <td><input type="text" name="sptl1" id="sptl1" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+                <td><input type="text" name="sptl2" id="sptl2" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+                <td><input type="text" name="sptl3" id="sptl3" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+            </tr>
+            <tr>
+                <td><label for="">Penguasaan materi penelitian</label>
+                </td>
+                <td><input type="text" name="sppm1" id="sppm1" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+                <td><input type="text" name="sppm2" id="sppm2" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+                <td><input type="text" name="sppm3" id="sppm3" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+            </tr>
+            <tr>
+                <td><label for="">Presentasi dan argumentasi jawaban</label>
+                </td>
+                <td><input type="text" name="sppd1" id="sppd1" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+                <td><input type="text" name="sppd2" id="sppd2" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+                <td><input type="text" name="sppd3" id="sppd3" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+            </tr>
+            <tr>
+                <td><label for="">Penampilan saat presentasi</label>
+                </td>
+                <td><input type="text" name="spps1" id="spps1" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+                <td><input type="text" name="spps2" id="spps2" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+                <td><input type="text" name="spps3" id="spps3" onkeypress="isnumberonly(event)" value="100" maxlength="2"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><label id="">Hasil</label></td>
+                <td>&nbsp;</td>
+                <td><input type="text" name="eksekusi_hasil" id="eksekusi_hasil_final_1"></td>
+                <td><input type="submit" onclick="Main_Function()" value="submit"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+        <p>Copyright &#169 2020 Fadly Safyuddin Maulana</p>
+    </div>
+</body>
+<script src="Process-Solver.js"></script>
+
+</html>

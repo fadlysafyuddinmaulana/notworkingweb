@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>Lorem ipsum dolor sit amet.</title>
+</head>
+
+<body>
+    <div id="header">
+        <img class="header-img" src="Logo UMP(1).png" alt="">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+    </div>
+
+    <div id="navigation">
+        <h3>MENU NAVIGATION</h3>
+            <ul>
+                <li><a href="https://ump.ac.id/"><i class="fa-solid fa-graduation-cap fa-2xl"></i></a></li>
+                <li><a href="https://fts.ump.ac.id/"><i class="fa-solid fa-atom fa-2xl"></i></a></li>
+                <li><a href="https://informatika.ump.ac.id/"><i class="fa-solid fa-computer fa-2xl"></i></a></li>
+                <li><a href="https://www.instagram.com/tama0301._/"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                <li><a href="Nilai-Skripsi.html"><i class="fa-solid fa-receipt fa-2xl"></i></a></li>
+                <li><a href="Nilai-Simulasi-Audit.html"><i class="fa-solid fa-file-lines fa-2xl"></i></a></li>
+            </ul>
+    </div>
+    <div id="content">
+        <table>
+            <th>
+                &nbsp;
+            </th>
+            <th>Input Nilai</th>
+            <th>Skor</th>
+            <tr>
+                <td>
+                    <label for="">Orisinalitas dan kebaruan topik penelitian</label>
+                </td>
+                <td>
+                    <input type="text" name="in1" id="in1" onkeypress="isnumberonly(event)" value="100" maxlength="3">
+                </td>
+                <td>
+                    <input type="text" name="s1" id="s1" onkeypress="isnumberonly(event)" maxlength="3">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Relevansi logis antara judul,masalah,teori,metode dan hasil penelitian</label>
+                </td>
+                <td>
+                    <input type="text" name="in2" id="in2" onkeypress="isnumberonly(event)" value="20" maxlength="3">
+                </td>
+                <td>
+                    <input type="text" name="s2" id="s2" onkeypress="isnumberonly(event)" maxlength="3">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Tata Tulis</label>
+                </td>
+                <td>
+                    <input type="text" name="in3" id="in3" onkeypress="isnumberonly(event)" value="40" maxlength="3">
+                </td>
+                <td>
+                    <input type="text" name="s3" id="s3" onkeypress="isnumberonly(event)" maxlength="3">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Penguasaan materi penelitian</label>
+                </td>
+                <td>
+                    <input type="text" name="in4" id="in4" onkeypress="isnumberonly(event)" value="30" maxlength="3">
+                </td>
+                <td>
+                    <input type="text" name="s4" id="s4" onkeypress="isnumberonly(event)" maxlength="3">
+                </td>
+            </tr>
+            <tr>
+                <td><label id="">Hasil</label></td>
+                <td><input type="text" name="eksekusi_hasil_in" id="eksekusi_hasil_in"></td>
+                <td><input type="text" name="eksekusi_hasil_skor" id="eksekusi_hasil_skor"></td>
+                <td><input type="submit" onclick="solver_msa()" value="submit"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+        <p>Copyright &#169 2020 Fadly Safyuddin Maulana</p>
+    </div>
+</body>
+<script src="Process-Solver.js"></script>
+
+</html>
