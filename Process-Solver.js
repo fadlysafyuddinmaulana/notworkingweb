@@ -141,21 +141,6 @@ function isnumberonly(evt) {
   }
 }
 
-function Test_Function() {
-  var s1 = parseInt(document.getElementById("s1").value);
-
-  var s2 = parseInt(document.getElementById("s2").value);
-
-  var in1 = parseInt(document.getElementById("in1").value);
-  var in2 = parseInt(document.getElementById("in2").value);
-  var in3 = parseInt(document.getElementById("in3").value);
-  var in4 = parseInt(document.getElementById("in4").value);
-
-  if (isNaN(spod1) || isNaN(spod2) || isNaN(spod3)) {
-    alert("test");
-  }
-}
-
 function solver_msa() {
   var s1_hasil = document.getElementById("s1");
   var s2_hasil = document.getElementById("s2");
