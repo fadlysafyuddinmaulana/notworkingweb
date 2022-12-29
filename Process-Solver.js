@@ -27,12 +27,9 @@ function Main_Function() {
   var spps2 = parseInt(document.getElementById("spps2").value);
   var spps3 = parseInt(document.getElementById("spps3").value);
 
-  var eksekusi_hasil_final_1 = document.getElementById(
-    "eksekusi_hasil_final_1"
-  );
-  var eksekusi_hasil_final_2 = document.getElementById(
-    "eksekusi_hasil_final_2"
-  );
+  var Total = document.getElementById("Total");
+  var Nilai_Akhir = document.getElementById("Nilai-Akhir");
+  var Nilai_Huruf = document.getElementById("Nilai-Huruf");
 
   if (isNaN(s1) || isNaN(s2)) {
     alert("Mohon di isi yak masing masing form");
@@ -52,8 +49,6 @@ function Main_Function() {
     eksekusi1 = (s1 * 50) / 100;
     eksekusi2 = (s2 * 50) / 100;
     eksekusi3 = eksekusi1 + eksekusi2;
-
-    eksekusi_hasil_final_2.value = eksekusi3;
 
     eksekusi_sp1 = spod1 + spod2 + spod3;
     eksekusi_spb1 = eksekusi_sp1 / 3;
@@ -94,48 +89,48 @@ function Main_Function() {
         eksekusi_spf6
     );
 
-    // eksekusi_bsf =
-    // 	eksekusi_spf1 +
-    // 	eksekusi_spf2 +
-    // 	eksekusi_spf3 +
-    // 	eksekusi_spf4 +
-    // 	eksekusi_spf5 +
-    // 	eksekusi_spf6;
+    eksekusi_sa = eksekusi3 / 100;
+    hasil_sa = eksekusi_sa * 40;
+
+    eksekusi_nsa = eksekusi_bsf / 100;
+    hasil_nsa = eksekusi_nsa * 60;
 
     if (eksekusi_bsf >= 86 && eksekusi_bsf <= 100) {
       hasil1 = "A";
       alert("Mendapatkan Nilai: " + hasil1);
-      eksekusi_hasil_final_1.value = hasil1;
+      Nilai_Huruf.value = hasil1;
     } else if (eksekusi_bsf >= 81 && eksekusi_bsf < 86) {
       hasil1 = "A-";
       alert("Mendapatkan Nilai: " + hasil1);
-      eksekusi_hasil_final_1.value = hasil1;
+      Nilai_Huruf.value = hasil1;
     } else if (eksekusi_bsf >= 76 && eksekusi_bsf < 86) {
       hasil1 = "B+";
       alert("Mendapatkan Nilai: " + hasil1);
-      eksekusi_hasil_final_1.value = hasil1;
+      Nilai_Huruf.value = hasil1;
     } else if (eksekusi_bsf >= 71 && eksekusi_bsf < 76) {
       hasil1 = "B";
       alert("Mendapatkan Nilai: " + hasil1);
-      eksekusi_hasil_final_1.value = hasil1;
+      Nilai_Huruf.value = hasil1;
     } else if (eksekusi_bsf >= 66 && eksekusi_bsf < 71) {
       hasil1 = "B-";
       alert("Mendapatkan Nilai: " + hasil1);
-      eksekusi_hasil_final_1.value = hasil1;
+      Nilai_Huruf.value = hasil1;
     } else if (eksekusi_bsf >= 61 && eksekusi_bsf < 66) {
       hasil1 = "C+";
       alert("Mendapatkan Nilai: " + hasil1);
-      eksekusi_hasil_final_1.value = hasil1;
+      Nilai_Huruf.value = hasil1;
     } else if (eksekusi_bsf >= 56 && eksekusi_bsf < 61) {
       hasil1 = "C";
       alert("Mendapatkan Nilai: " + hasil1);
-      eksekusi_hasil_final_1.value = hasil1;
+      Nilai_Huruf.value = hasil1;
     } else {
       hasil1 = "D";
       alert("Mendapatkan Nilai: " + hasil1);
-      eksekusi_hasil_final_1.value = hasil1;
+      Nilai_Huruf.value = hasil1;
     }
   }
+  Total.value = eksekusi_bsf;
+  Nilai_Akhir.value = eksekusi3;
 }
 
 function isnumberonly(evt) {
