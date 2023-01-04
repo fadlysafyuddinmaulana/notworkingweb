@@ -123,8 +123,12 @@ function Main_Function() {
       hasil1 = "C";
       alert("Mendapatkan Nilai: " + hasil1);
       Nilai_Huruf.value = hasil1;
-    } else {
+    } else if (eksekusi_bsf >= 41 && eksekusi_bsf < 56) {
       hasil1 = "D";
+      alert("Mendapatkan Nilai: " + hasil1);
+      Nilai_Huruf.value = hasil1;
+    } else {
+      hasil1 = "E";
       alert("Mendapatkan Nilai: " + hasil1);
       Nilai_Huruf.value = hasil1;
     }
@@ -154,7 +158,7 @@ function solver_msa() {
 
   var eksekusi_hasil_in = document.getElementById("eksekusi_hasil_in");
   var eksekusi_hasil_skor = document.getElementById("eksekusi_hasil_skor");
-  
+
   if (isNaN(in1)) {
     alert("Mohon di isi yak masing masing form");
   } else if (isNaN(in2)) {
