@@ -154,100 +154,110 @@ function solver_msa() {
 
   var eksekusi_hasil_in = document.getElementById("eksekusi_hasil_in");
   var eksekusi_hasil_skor = document.getElementById("eksekusi_hasil_skor");
-
-  if (in1 >= 80) {
-    skor = 4;
-    s1 = skor;
-    s1_hasil.value = skor;
-  } else if (in1 >= 60 && in1 < 80) {
-    skor = 3;
-    s1 = skor;
-    s1_hasil.value = skor;
-  } else if (in1 >= 40 && in1 < 60) {
-    skor = 2;
-    s1 = skor;
-    s1_hasil.value = skor;
-  } else if (in1 >= 10 && in1 < 40) {
-    skor = 1;
-    s1 = skor;
-    s1_hasil.value = skor;
+  
+  if (isNaN(in1)) {
+    alert("Mohon di isi yak masing masing form");
+  } else if (isNaN(in2)) {
+    alert("Mohon di isi yak masing masing form");
+  } else if (isNaN(in3)) {
+    alert("Mohon di isi yak masing masing form");
+  } else if (isNaN(in4)) {
+    alert("Mohon di isi yak masing masing form");
   } else {
-    skor = 0;
-    s1 = skor;
-    s1_hasil.value = skor;
+    if (in1 >= 80) {
+      skor = 4;
+      s1 = skor;
+      s1_hasil.value = skor;
+    } else if (in1 >= 60 && in1 < 80) {
+      skor = 3;
+      s1 = skor;
+      s1_hasil.value = skor;
+    } else if (in1 >= 40 && in1 < 60) {
+      skor = 2;
+      s1 = skor;
+      s1_hasil.value = skor;
+    } else if (in1 >= 10 && in1 < 40) {
+      skor = 1;
+      s1 = skor;
+      s1_hasil.value = skor;
+    } else {
+      skor = 0;
+      s1 = skor;
+      s1_hasil.value = skor;
+    }
+
+    if (in2 >= 80) {
+      skor = 4;
+      s2 = skor;
+      s2_hasil.value = skor;
+    } else if (in2 >= 60 && in2 < 80) {
+      skor = 3;
+      s2 = skor;
+      s2_hasil.value = skor;
+    } else if (in2 >= 40 && in2 < 60) {
+      skor = 2;
+      s2 = skor;
+      s2_hasil.value = skor;
+    } else if (in2 >= 10 && in2 < 40) {
+      skor = 1;
+      s2 = skor;
+      s2_hasil.value = skor;
+    } else {
+      skor = 0;
+      s2 = skor;
+      s2_hasil.value = skor;
+    }
+
+    if (in3 >= 80) {
+      skor = 4;
+      s3 = skor;
+      s3_hasil.value = skor;
+    } else if (in3 >= 60 && in3 < 80) {
+      skor = 3;
+      s3 = skor;
+      s3_hasil.value = skor;
+    } else if (in3 >= 40 && in3 < 60) {
+      skor = 2;
+      s3 = skor;
+      s3_hasil.value = skor;
+    } else if (in3 >= 10 && in3 < 40) {
+      skor = 1;
+      s3 = skor;
+      s3_hasil.value = skor;
+    } else {
+      skor = 0;
+      s3 = skor;
+      s3_hasil.value = skor;
+    }
+
+    if (in4 >= 80) {
+      skor = 4;
+      s4 = skor;
+      s4_hasil.value = skor;
+    } else if (in4 >= 60 && in4 < 80) {
+      skor = 3;
+      s4 = skor;
+      s4_hasil.value = skor;
+    } else if (in4 >= 40 && in4 < 60) {
+      skor = 2;
+      s4 = skor;
+      s4_hasil.value = skor;
+    } else if (in4 >= 10 && in4 < 40) {
+      skor = 1;
+      s4 = skor;
+      s4_hasil.value = skor;
+    } else {
+      skor = 0;
+      s4 = skor;
+      s4_hasil.value = skor;
+    }
+
+    eksekusi_in = in1 + in2 + in3 + in4;
+    eksekusi_final_in = eksekusi_in / 4;
+    eksekusi_hasil_in.value = eksekusi_final_in;
+
+    eksekusi_skor = s1 + s2 + s3 + s4;
+    eksekusi_final_skor = eksekusi_skor / 4;
+    eksekusi_hasil_skor.value = eksekusi_final_skor;
   }
-
-  if (in2 >= 80) {
-    skor = 4;
-    s2 = skor;
-    s2_hasil.value = skor;
-  } else if (in2 >= 60 && in2 < 80) {
-    skor = 3;
-    s2 = skor;
-    s2_hasil.value = skor;
-  } else if (in2 >= 40 && in2 < 60) {
-    skor = 2;
-    s2 = skor;
-    s2_hasil.value = skor;
-  } else if (in2 >= 10 && in2 < 40) {
-    skor = 1;
-    s2 = skor;
-    s2_hasil.value = skor;
-  } else {
-    skor = 0;
-    s2 = skor;
-    s2_hasil.value = skor;
-  }
-
-  if (in3 >= 80) {
-    skor = 4;
-    s3 = skor;
-    s3_hasil.value = skor;
-  } else if (in3 >= 60 && in3 < 80) {
-    skor = 3;
-    s3 = skor;
-    s3_hasil.value = skor;
-  } else if (in3 >= 40 && in3 < 60) {
-    skor = 2;
-    s3 = skor;
-    s3_hasil.value = skor;
-  } else if (in3 >= 10 && in3 < 40) {
-    skor = 1;
-    s3 = skor;
-    s3_hasil.value = skor;
-  } else {
-    skor = 0;
-    s3 = skor;
-    s3_hasil.value = skor;
-  }
-
-  if (in4 >= 80) {
-    skor = 4;
-    s4 = skor;
-    s4_hasil.value = skor;
-  } else if (in4 >= 60 && in4 < 80) {
-    skor = 3;
-    s4 = skor;
-    s4_hasil.value = skor;
-  } else if (in4 >= 40 && in4 < 60) {
-    skor = 2;
-    s4 = skor;
-    s4_hasil.value = skor;
-  } else if (in4 >= 10 && in4 < 40) {
-    skor = 1;
-    s4 = skor;
-    s4_hasil.value = skor;
-  } else {
-    skor = 0;
-    s4 = skor;
-    s4_hasil.value = skor;
-  }
-
-  eksekusi_in = in1 + in2 + in3 + in4;
-  eksekusi_final_in = eksekusi_in / 4;
-  eksekusi_hasil_in.value = eksekusi_final_in;
-
-  eksekusi_skor = s1 + s2 + s3 + s4;
-  eksekusi_final_skor = eksekusi_skor / 4;
-  eksekusi_hasil_skor.value = eksekusi_final_skor;
 }
